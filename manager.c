@@ -61,7 +61,7 @@ fp = fopen("product.txt", "rt");
 if(fp == NULL) {printf("파일이 없습니다!\n"); return 0;}
 
 for(;;count++){
-fscanf(fp, "%d %d %[^\n]", &p[i].weight, &p[i].price, p[i].name);
+fscanf(fp, "%d %d %[^\n]", &p[count].weight, &p[count].price, p[count].name);
 if(feof(fp)) break;
 }
 
